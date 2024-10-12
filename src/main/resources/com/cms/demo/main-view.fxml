@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<BorderPane minHeight="480.0" minWidth="640.0" prefHeight="720.0" prefWidth="1280.0" stylesheets="@styleSheet.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cms.demo.MainController">
+   <left>
+      <AnchorPane fx:id="sideMenu" minWidth="-Infinity" prefHeight="720.0" prefWidth="210.0" styleClass="side-menu" BorderPane.alignment="CENTER">
+         <children>
+            <Label ellipsisString="" focusTraversable="false" graphicTextGap="10.0" layoutX="30.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#toggleSideMenu" prefHeight="36.0" prefWidth="264.0" styleClass="side-menu-item" text="Menu" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../icons/Menu.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <VBox fx:id="pagesVBox" layoutY="55.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="572.0" prefWidth="190.0" spacing="5.0" AnchorPane.bottomAnchor="93.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="55.0">
+               <children>
+                  <Label ellipsisString="" focusTraversable="false" graphicTextGap="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="36.0" prefWidth="264.0" styleClass="side-menu-item" text="Home">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../icons/Home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label ellipsisString="" focusTraversable="false" graphicTextGap="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="36.0" prefWidth="264.0" styleClass="side-menu-item" text="My Courses">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../icons/Book%20Stack.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label ellipsisString="" focusTraversable="false" graphicTextGap="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="36.0" prefWidth="264.0" styleClass="side-menu-item" text="All Courses">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../icons/Books.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+            </VBox>
+            <Label ellipsisString="" focusTraversable="false" graphicTextGap="10.0" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="36.0" prefWidth="264.0" styleClass="side-menu-item" text="Logout" textFill="RED" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../icons/Logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label ellipsisString="" focusTraversable="false" graphicTextGap="10.0" layoutX="20.0" layoutY="20.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="36.0" prefWidth="264.0" styleClass="side-menu-item" text="Settings" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../icons/Settings.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="546.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

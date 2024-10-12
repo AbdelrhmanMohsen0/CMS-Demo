@@ -1,0 +1,27 @@
+/*
+* --Dark: #e8e8e8
+* --Darker: #d7d7d7
+* --Main: #272829
+*/
+
+.side-menu {
+    -fx-background-color: #e8e8e8;
+}
+
+.side-menu-item {
+     -fx-padding: 10 10;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+}
+
+.side-menu-item:hover {
+    -fx-background-color: #d7d7d7;
+}
+.active-side-menu-item {
+    -fx-text-fill: white;
+    -fx-background-color: #272829;
+}
+.active-side-menu-item:hover {
+    -fx-text-fill: white;
+    -fx-background-color: #272829;
+}
