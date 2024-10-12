@@ -41,7 +41,7 @@ public class MainController implements Initializable {
         Timeline timeline = new Timeline();
         KeyValue widthValue = new KeyValue(sideMenu.prefWidthProperty(), fullSideMenu ? 60.0 : 210.0);
         fullSideMenu = !fullSideMenu;
-        KeyFrame keyFrame = new KeyFrame(Duration.seconds(0.2), widthValue);
+        KeyFrame keyFrame = new KeyFrame(Duration.seconds(0.1), widthValue);
         timeline.getKeyFrames().add(keyFrame);
         timeline.play();
     }
