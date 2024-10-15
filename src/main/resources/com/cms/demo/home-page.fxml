@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="654.0" prefWidth="1070.0" styleClass="my-courses-pane" stylesheets="@styleSheet.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cms.demo.HomePageController">
+   <children>
+      <Label layoutX="67.0" layoutY="20.0" prefHeight="36.0" prefWidth="690.0" styleClass="header-label" text="Hi, User Name" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="Segoe UI" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="58.0" prefHeight="36.0" prefWidth="427.0" styleClass="header-p" text="Welcome back! Here's a quick overview of your recent activity and updates." AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="40.0">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="480.0" layoutY="97.0" prefHeight="194.0" prefWidth="346.0" styleClass="home-alerts-pane" AnchorPane.bottomAnchor="363.0" AnchorPane.leftAnchor="694.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="97.0">
+         <children>
+            <Label graphicTextGap="7.0" layoutX="20.0" layoutY="10.0" prefHeight="36.0" prefWidth="211.0" styleClass="header-label" text="Upcoming Deadlines">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../icons/Important%20Time.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label contentDisplay="RIGHT" layoutX="288.0" layoutY="19.0" prefHeight="19.0" prefWidth="73.0" text="View All" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font name="Segoe UI Semibold" size="13.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../icons/Forward-black.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <AnchorPane layoutX="35.0" layoutY="59.0" prefHeight="116.0" prefWidth="125.0" styleClass="home-alerts-item">
+               <children>
+                  <Label contentDisplay="RIGHT" layoutX="19.0" layoutY="20.0" prefHeight="19.0" prefWidth="96.0" text="Sep 11, 2024">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="12.0" layoutY="43.0" prefHeight="54.0" prefWidth="103.0" text="Introduction to JavaScript" textAlignment="CENTER" textFill="#4a4a4a" wrapText="true">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+            <AnchorPane layoutX="187.0" layoutY="59.0" prefHeight="116.0" prefWidth="125.0" styleClass="home-alerts-item">
+               <children>
+                  <Label contentDisplay="RIGHT" layoutX="19.0" layoutY="20.0" prefHeight="19.0" prefWidth="96.0" text="Sep 11, 2024">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="12.0" layoutY="43.0" prefHeight="54.0" prefWidth="103.0" text="Introduction to JavaScript" textAlignment="CENTER" textFill="#4a4a4a" wrapText="true">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <VBox layoutX="50.0" layoutY="96.0" prefHeight="203.0" prefWidth="236.0" spacing="7.0">
+         <children>
+            <AnchorPane prefHeight="60.0" prefWidth="207.0" styleClass="home-total-pane">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../icons/Online%20Group%20Studying.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="57.0" layoutY="5.0" text="40">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="56.0" layoutY="30.0" text="Total Enrolled Courses">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="60.0" prefWidth="207.0" styleClass="home-total-pane">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../icons/Test%20Passed.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="57.0" layoutY="5.0" text="12">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="56.0" layoutY="30.0" text="Total Assignments">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="75.0" prefHeight="60.0" prefWidth="207.0" styleClass="home-total-pane">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../icons/Ask%20Question.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="57.0" layoutY="5.0" text="3">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="56.0" layoutY="30.0" text="Total Quizes">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <Label layoutX="59.0" layoutY="321.0" prefHeight="36.0" prefWidth="132.0" styleClass="header-label" text="Active Courses">
+         <font>
+            <Font name="Segoe UI" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="186.0" layoutY="328.0" prefHeight="23.0" prefWidth="24.0" styleClass="number-label" text="12" textOverrun="CLIP" />
+      <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" layoutX="38.0" layoutY="379.0" prefHeight="220.0" prefWidth="995.0" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="384.0">
+         <content>
+            <TilePane hgap="20.0" prefHeight="200.0" prefWidth="200.0" vgap="20.0">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="test-pane" />
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="test-pane" />
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="test-pane" />
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="test-pane" />
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="test-pane" />
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="test-pane" />
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="test-pane" />
+               </children>
+            </TilePane>
+         </content>
+      </ScrollPane>
+      <VBox layoutX="310.0" layoutY="96.0" prefHeight="203.0" prefWidth="355.0" spacing="7.0" AnchorPane.bottomAnchor="355.0" AnchorPane.topAnchor="96.0">
+         <children>
+            <AnchorPane>
+               <children>
+                  <Button alignment="CENTER_RIGHT" contentDisplay="RIGHT" focusTraversable="false" graphicTextGap="0.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="60.0" prefWidth="355.0" text="Courses Grades">
+                     <styleClass>
+                        <String fx:value="main-button" />
+                        <String fx:value="home-quick-button" />
+                     </styleClass>
+                  </Button>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="305.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="15.0">
+                     <image>
+                        <Image url="@../../../icons/Right%20Arrow-big.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="16.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="16.0" AnchorPane.topAnchor="12.0">
+                     <image>
+                        <Image url="@../../../icons/Grades.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+            <AnchorPane>
+               <children>
+                  <Button alignment="CENTER_RIGHT" contentDisplay="RIGHT" focusTraversable="false" graphicTextGap="0.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="60.0" prefWidth="355.0" text="Show All Courses">
+                     <styleClass>
+                        <String fx:value="main-button" />
+                        <String fx:value="home-quick-button" />
+                     </styleClass>
+                  </Button>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="15.0">
+                     <image>
+                        <Image url="@../../../icons/Right%20Arrow-big.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="26.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="16.0" AnchorPane.topAnchor="12.0">
+                     <image>
+                        <Image url="@../../../icons/Books-big.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+            <AnchorPane>
+               <children>
+                  <Button alignment="CENTER_RIGHT" contentDisplay="RIGHT" focusTraversable="false" graphicTextGap="0.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="60.0" prefWidth="355.0" text="Personal Notes">
+                     <styleClass>
+                        <String fx:value="main-button" />
+                        <String fx:value="home-quick-button" />
+                     </styleClass>
+                  </Button>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="15.0">
+                     <image>
+                        <Image url="@../../../icons/Right%20Arrow-big.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="26.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="16.0" AnchorPane.topAnchor="12.0">
+                     <image>
+                        <Image url="@../../../icons/Create.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

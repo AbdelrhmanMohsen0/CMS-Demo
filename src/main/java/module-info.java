@@ -10,6 +10,7 @@ module com.cms.demo {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires java.logging;
 
     opens com.cms.demo to javafx.fxml;
     exports com.cms.demo;
